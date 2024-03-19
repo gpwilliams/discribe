@@ -17,18 +17,18 @@ model_language = "en"
 # sort paths ---------------------------------------------------------------------
 
 # join user folder with the input
-input_path = os.path.join("../input", user_folder)
+input_path = os.path.join("input", user_folder)
 
 # create the output folders
-if not os.path.exists(os.path.join("../output/transcriptions", user_folder)):
-    os.makedirs(os.path.join("../output/transcriptions", user_folder))
+if not os.path.exists(os.path.join("output/transcriptions", user_folder)):
+    os.makedirs(os.path.join("output/transcriptions", user_folder))
                 
-if not os.path.exists(os.path.join("../output/words", user_folder)):
-    os.makedirs(os.path.join("../output/words", user_folder))
+if not os.path.exists(os.path.join("output/words", user_folder)):
+    os.makedirs(os.path.join("output/words", user_folder))
 
 # get the output paths
-transcription_output_path = os.path.join("../output/transcriptions", user_folder)
-words_output_path = os.path.join("../output/words", user_folder)
+transcription_output_path = os.path.join("output/transcriptions", user_folder)
+words_output_path = os.path.join("output/words", user_folder)
 
 # get a list of all .wav files in the folder
 wav_files = [file for file in os.listdir(input_path) if file.endswith(".wav")]

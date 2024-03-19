@@ -1,7 +1,16 @@
 # user defined --------------------------------
+
+# ignore files in input and output...
 input/*
 output/*
+
+# ... but keep their folders
+!input/.gitkeep 
+!output/.gitkeep 
+
 python/01_modelling.ipynb
+python/02_processing.ipynb
+python/03_analysis.ipynb
 
 # Mac OS --------------------------------------
 # General
